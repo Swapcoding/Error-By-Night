@@ -21,6 +21,10 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./main.css" />
     <title>WEBSITE NAME</title>
   </head>
@@ -63,15 +67,16 @@
     </section>
     <section class="mb-5 pb-5">
       <div class="home-section">
-        <div class="home-text text-center p-5">
+        <div class="home-text text-center px-5 pt-lg-5 pt-1">
           Welcome to Error By Night!!!
         </div>
+        <p class="text-center fs-5">Some random text here....headline etc.</p>
       </div>
       <div class="home-account-card">
         <div class="container">
           <div class="row pt-3">
             <div class="col my-lg-0 my-4 px-3 justify-content-center d-flex">
-              <div class="card" style="width: 18rem">
+              <div class="shadow-lg accountCard card" style="width: 18rem">
                 <img
                   src="./book.jfif"
                   class="card-img-top home-card-img"
@@ -81,15 +86,28 @@
                   <p class="card-text accountTitle">SignUp!</p>
                   <div class="container">
                     <div class="row">
-                      <div class="col">As Professor</div>
-                      <div class="col">As Student</div>
+                      <div class="fw-bold text-start">As Professor:</div>
+                      SignUp as a professor to keep track of submissions and
+                      much more!
                     </div>
+                    <div class="row mt-4">
+                      <div class="fw-bold text-start">As Student</div>
+                      SignUp as a student for on time submissions:)
+                    </div>
+                    <button
+                      type="submit"
+                      class="btn register-submit mt-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                    >
+                      Register
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col my-lg-0 my-4 px-3 justify-content-center d-flex">
-              <div class="card" style="width: 18rem">
+              <div class="shadow-lg accountCard card" style="width: 18rem">
                 <img
                   src="./book1.jfif"
                   class="card-img-top home-card-img"
@@ -126,6 +144,93 @@
                       Submit
                     </button>
                   </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Modal title
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-2 row py-2">
+                        <input
+                          type="email"
+                          class="form-control login-form col mx-4 mt-2"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Name"
+                        />
+                        <input
+                          type="email"
+                          class="form-control login-form col mx-4 mt-2"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Email"
+                        />
+                        <input
+                          type="password"
+                          class="form-control login-form col-lg-6 col mx-4 mt-2"
+                          id="exampleInputPassword1"
+                          placeholder="Password"
+                        />
+                        <div class="form-check ms-4 mt-3">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="professor"
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault1"
+                          >
+                            As Professor
+                          </label>
+                        </div>
+                        <div class="form-check ms-4 mt-3">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="flexRadioDefault"
+                            id="flexRadioDefault"
+                            checked
+                          />
+                          <label
+                            class="form-check-label"
+                            for="flexRadioDefault2"
+                          >
+                            As Student
+                          </label>
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="btn btn-primary login-submit mt-2"
+                      >
+                        Submit
+                      </button>
+                    </form>
+                  </div>
                 </div>
               </div>
             </div>

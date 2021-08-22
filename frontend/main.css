@@ -58,3 +58,13 @@ body {
   background-color: #dabe67;
   transition: ease 0.4ms;
 }
+.register-submit {
+  color: #ffff;
+  background-color: #d7a60f;
+  border: none;
+  text-decoration: none;
+}
+.register-submit:hover {
+  background-color: #dabe67;
+  transition: ease 0.4ms;
+}
